@@ -1,0 +1,76 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: sans-serif;
+}
+header {
+  font: normal 14px sans-serif;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  background-color: #313b3f;
+  color: #d9a74a;
+  overflow: auto;
+  padding: 5px 20px 7px 15px;
+  position: relative;
+  .fat-arrow {
+    position: relative;
+    float: left;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    span {
+      font-size: 20px;
+      font-style: italic;
+    }
+    .caret {
+      font-size: 30px;
+      line-height: 22px;
+      display: inline-block;
+      font-weight: lighter;
+    }
+  }
+  a {
+    text-decoration: none;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    float: right;
+    color: #d9a74a;
+  }
+}
+
+#employees,
+#services,
+#goals {
+  margin-left: 15px;
+  margin-top: 20px;
+  color: red;
+}
+
+p {
+  margin: 10px 0 20px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+
+.dashboard-link {
+  font: normal 14px sans-serif;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: lightgrey;
+  border-top: 1px solid black;
+  padding: 10px;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-style: italic;
+}
+.dashboard-link a:hover {
+  color: red;
+}
